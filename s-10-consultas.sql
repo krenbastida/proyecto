@@ -31,14 +31,14 @@ select m.mascota_id, m.nombre, m.folio, m.fecha_ingreso, m.fecha_nacimiento,
 m.fecha_status, m.tipo_mascota_id, m.origen_mascota_id, m.estatus_mascota_id 
 from mascota m
 where m.estatus_mascota_id = 4;
-/*
+
 -- CONSULTA 3 (Tabla externa)
 -- Nos devuelve informacion acerca de aquellos centros operativos prospectos con 
 -- un valor menor o igual a 1 melon
 select direccion, longitud, latitud, precio
 from centro_operativo_prospecto cop
 where cop.precio <= 1000000;
-*/
+
 
 
 -- CONSULTA 4 (Se usa vistas y joins)

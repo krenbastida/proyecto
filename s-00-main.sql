@@ -22,7 +22,7 @@ prompt Creando secuencias
 @s-05-secuencias.sql
 
 prompt Creando tabla externa
---@s-04-tablas-externas.sql
+@s-04-tablas-externas.sql
 
 prompt Creando indices
 @s-06-indices.sql

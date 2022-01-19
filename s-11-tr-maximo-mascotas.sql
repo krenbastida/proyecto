@@ -22,12 +22,10 @@ begin
   and v_solicitud_ganadora = 1;
 
   if v_count > 4 then
-  dbms_output.put_line('Hola Albert');
-  /*
     raise_application_error(-20001, 'El cliente: ' 
     ||v_cliente_id 
     ||'ya adoptó más cinco mascotas no es posible adoptar mas de lo permitido');
-    */
+    
   end if;
 end;
 /
