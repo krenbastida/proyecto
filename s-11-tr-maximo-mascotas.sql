@@ -21,7 +21,7 @@ begin
   where sm.cliente_id = v_cliente_id
   and v_solicitud_ganadora = 1;
 
-  if v_count > 4 then
+  if v_count > 5 then
     raise_application_error(-20001, 'El cliente: ' 
     ||v_cliente_id 
     ||'ya adoptó más cinco mascotas no es posible adoptar mas de lo permitido');

@@ -26,9 +26,10 @@ begin
    || v_cliente_id || ' ,'
    || v_mascota_id || ' ,');
 
- exception
+insert into solicitud_mascota values(v_solicitud_mascota_id,v_fecha_solicitud,v_descripcion_rechazo,v_solicitud_ganadora,v_cliente_id,v_mascota_id);
+
+  exception
     when others then
-    
-  dbms_output.put_line(v_cuenta);
+    dbms_output.put_line('El trigger funciona');
 end;
 /
