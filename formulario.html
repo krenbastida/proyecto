@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/pet_home_ab.png">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!--------------------  HEADER -------------------------->
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a class="imagen-his" href="index.html">
+                    <img src="img/logo_fi.png" alt="Logo Pet Home">
+                </a>
+                <div class="imagen-his1">
+                    <img src="img/denuncia1.png" alt="Logo de la empresa">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------  FORMULARIO   -------------------->
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario</h2>
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Crear Denucia</legend>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="nombre">Nombre del Denuciante:</label>
+                <input type="text" id="nombre" placeholder="Tú nombre">
+
+                <label for="mensaje">Descripción de lo sucedido:</label>
+                <textarea id="mensaje" placeholder="Explícanos el motivo de tu denuncia, procura ser lo más detallado posible"></textarea>
+
+                <label for="opciones">Tipo de Denuncia:</label>
+                <select id="opciones">
+                    <option disabled value="" selected>-- Seleccione --</option>
+                    <option value="">Maltrato/Acoso laboral</option>
+                    <option value="">Acoso sexual/Violencia de género</option>
+                    <option value="">Robo/Hurto</option>
+                    <option value="">Operación Sospechosa</option>
+                </select>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Cámaras de Seguridad FI</legend>
+                <label for="opciones">Edificio:</label>
+                <select id="opciones">
+                    <option disabled value="" selected>-- Seleccione --</option>
+                    <option value="">Edificio A</option>
+                    <option value="">Edificio B</option>
+                    <option value="">Edificio C</option>
+                    <option value="">Edificio D</option>
+                    <option value="">Edificio E</option>
+                    <option value="">Edificio F</option>
+                    <option value="">Edificio G</option>
+                    <option value="">Edificio H</option>
+                    <option value="">Edificio I</option>
+                    <option value="">Edificio J</option>
+                    <option value="">Edificio K</option>
+                    <option value="">Edificio L</option>
+                    <option value="">Edificio M</option>
+                    <option value="">Edificio N</option>
+                    <option value="">Edificio NN</option>
+                    <option value="">Edificio O</option>
+                    <option value="">Edificio P</option>
+                    <option value="">Edificio Q</option>
+                    <option value="">Edificio R</option>
+                    <option value="">Edificio S</option>
+                    <option value="">Edificio T</option>
+                    <option value="">Edificio U</option>
+                    <option value="">Edificio V</option>
+                    <option value="">Edificio W</option>
+                    <option value="">Edificio X</option>
+                    <option value="">Edificio Y</option>
+                </select>
+                <label for="opciones">Cámaras Disponibles:</label>
+                <select id="opciones">
+                    <option disabled value="" selected>-- Seleccione --</option>
+                    <option value="">Cámara 1</option>
+                    <option value="">Cámara 2</option>
+                    <option value="">Cámara 3</option>
+                    <option value="">Cámara 4</option>
+                    <option value="">Cámara 5</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Evidencia</legend>
+                <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank">
+                    <p>
+                      Sube un archivo:
+                      <input type="file" name="archivo_subido">
+                    </p>
+                </form>
+                <div class="boton boton-amarillo">
+                    <a href="usuarios.html">
+                        Enviar
+                    </a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-----------------------  FOOTER ------------------------->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav> 
+                <p class="copyright">Todos los Derechos Reservados &copy;</p>
+            </nav>
+            <p class ="copyright" >Creado por soluciones de Software S.A de C.V.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

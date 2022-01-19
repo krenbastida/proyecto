@@ -1,0 +1,618 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* Reset para REMS 62.5% = 10 de 16px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    /* = 1200px; */
+    margin: 0 auto 0 auto;
+}
+
+
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/* Utilidades */
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+
+
+
+
+/** Header **/
+.site-header {
+    background-color: #03989e;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio {
+    
+    background: url(../img/fondo_denuncia.jpeg);
+    max-width: 100%;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: center;
+    }
+    h1{
+        font-size: 3.6rem;
+    }
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+    /* Interlineado */
+    
+}
+
+.barra {
+    padding-top: 3rem;
+    margin-right: 0;
+}
+
+
+.barra img{
+    max-width: 30%;
+    margin-right: 0;
+}
+
+
+
+@media (min-width: 480px){
+    .barra img{
+        max-width: 25%;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        /*Alinea el titulo y navegacion */
+    }
+    .barra img{
+        max-width: 60%;
+        margin-right: 0;
+    } 
+    .imagen-his{
+        max-width: 20%;
+        margin-right: 0;
+    }
+
+    .imagen-his1{
+        max-width: 25%;
+    }
+    
+}
+
+
+.navegacion img{
+    max-width: 40%;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+        align-items: center center;
+    }
+    .navegacion a:last-of-type {
+        /* Pseudoselector */
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    /* Al pasar el cursor da color */
+    color: #F3DB31;
+}
+
+
+/** Denuncias **/
+
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        /* Separacion */
+        flex-wrap: wrap;
+        /* Para que no se amontonen los anuncios */
+    }
+
+    .contenedor-anuncios1 {
+        display: flex;
+        justify-content: center;
+        /* Separacion */
+        flex-wrap: wrap;
+        /* Para que no se amontonen los anuncios */
+    }
+}
+
+.anuncio {
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+.anuncio1 {
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #F5F5F5;
+    margin-bottom: 5rem;
+}
+.anuncio2 {
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #F5F5F5;
+    margin-bottom: 5rem;
+}
+.anuncio3 {
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #F5F5F5;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+.anuncio3 h4{
+    margin: 0;
+}
+
+.anuncio4 {
+    border-style:solid;
+    border-color: #71B100;
+    border-width: 4px;
+    border-radius: 2rem;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #ffffff;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+.anuncio4 h4{
+    margin: 0;
+}
+
+.anuncio5 {
+    border-style:solid;
+    border-color: #ffdc3d;
+    border-width: 4px;
+    border-radius: 2rem;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #ffffff;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+.anuncio5 h4{
+    margin: 0;
+}
+
+.anuncio6 {
+    border-style:solid;
+    border-color: #fc2626;
+    border-width: 4px;
+    border-radius: 2rem;
+    /* border: 1px solid #B5B5B5; lo mismo */
+    background: #ffffff;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+.anuncio6 h4{
+    margin: 0;
+}
+
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex-shrink: 0;
+        /*Conserva el tamaño original de cada anuncio */
+        flex-basis: calc(50% - 1rem);
+        flex-grow: 0;
+        /* flex: 0 0 calc(33.3% - 1rem); lo mismo */
+    }
+
+
+        /** PARTE ABOGADOS **/
+        .entrada-blog a {
+            display: inline-block;
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        
+}
+
+.contenido-anuncio {
+    padding: 4rem;
+    /* Aplica en todas las direcciones un espacio */
+}
+.contenido-anuncio span{
+    font-weight: bold;     /* Aplicamos negritas en ver denuncias*/
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    
+    font-size: 2.3rem;
+}
+
+/** Seccion Inferior **/
+
+@media (min-width: 768px) {
+    
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        flex-basis: 60%;
+    }
+    .seccion-inferior .testimoniales {
+        flex-basis: calc(40% - 2rem);
+    }
+}
+
+.entrada-blog {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.entrada-blog:last-of-type Envia{
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        flex-basis: calc(60% - 3rem);
+    }
+}
+
+.texto-entrada a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71B100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span {
+    color: #E08709;
+}
+
+
+
+/** Footer **/
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+
+/** PARTE ABOGADOS **/
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
+
+
+
+/** Formulario **/
+
+contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2.4rem;
+    color: #333333;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    /* Toma todo el espacio disponible */
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    margin: none;
+    border-radius: 1rem;
+    border: none;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.contenedor-seccion {
+    max-width: 100%;
+}
+
+.forma-contacto {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/**  LOGIN DE LA PÁGINA PRINCIPAL   **/
+.login-box{
+    background: #333333;
+    margin: 3rem 1rem 3rem 1rem;
+    color: #fff;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box label {
+    margin: 1rem;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    margin-left: 1rem;
+    width: 94%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box a {
+    color: #fff;
+}
+
+.otras a{
+    font-size: 13px;           
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+@media (min-width: 768px){
+    .login-box {   
+        width: 60rem;
+        height: 470px;
+        background: #333333;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 7rem 3rem;
+    }
+    
+    .login-box h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+      
+    .login-box label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+    }
+      
+    .login-box input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+      
+    .login-box input[type="text"], .login-box input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+      
+    .login-box a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+      
+    .login-box a:hover {
+        color: #fff;
+    }
+    
+    .edit-login{
+        padding: 3rem 0;
+        display: grid;
+        margin: 2rem;
+        
+    }
+    
+    .otras a{
+        font-size: 12px;           
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
