@@ -2,10 +2,6 @@
 --@Fecha creación: 15/01/2022 
 --@Descripción: Se realiza la carga de los datos de todas las tablas
 
---clear screen
-
---connect bvgb_proy_admin/bvgb;
-
 
 --CENTRO OPERATIVO
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval, 'AERC4', 'Caridad', 'CALLE. TEOTIHUACAN 18, HIPODROMO , CUAUHTEMOC , DF , C.P.06100', 26112819.82, 41876420.29, 1, 0, 0);
@@ -16,7 +12,7 @@ insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, lo
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'POSR4', 'Sears', 'CLL DOCTOR NEVA 47, DOCTORES , MEXICO , DF , C.P.06720',25137321.52,34951402.31,1,0,0);
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'HVNW8', 'Hogar', 'AVE TRANSPENINSULAR 32 INT D, FICT LOCALITY , FICTICIO , MEX , C.P.22800',89759388.62,75985700.78,1,0,0);
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'KALO8', 'Amigo', 'JESUS REYES HEROLES 123, LOMAS QUEBRADAS , MEXICO , DF , C.P.10000',60514118.78,79706253.47,1,0,0);
-insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'AÑLS6', 'Bondad', 'AVE HOMERO 1425 INT 1P, FICT LOCALITY , FICTICIO , MEX , C.P.11540',58032512.74,97400111.35,1,0,0);
+insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'ALS6', 'Bondad', 'AVE HOMERO 1425 INT 1P, FICT LOCALITY , FICTICIO , MEX , C.P.11540',58032512.74,97400111.35,1,0,0);
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'NMVI6', 'Balbuena', 'AVE JOSE MA IZAZAGA 161 LOC G, FICT LOCALITY , FICTICIO , MEX , C.P.06000',39203980.91,26571537.28,1,0,0);
 
 insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, longitud, latitud, es_clinica, es_refugio, es_oficina) values (centro_operativo_seq.nextval,'IUFJ6','Salud','PRL ZARCO 6, SAN SIMON TOLNAHUAC , MEXICO , DF , C.P.06920',54315308.18,67704208.22,0,1,0);
@@ -44,13 +40,13 @@ insert into centro_operativo (centro_operativo_id, codigo, nombre, direccion, lo
 -- REFUGIOS
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (11, 'EMCLKDAU', 5000, empty_blob(),'CUIDANDO CACHORROS', null);  
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (2, 'CSAMLOQA', 2000, empty_blob(),'CUIDAR ANIMALES ES MI PASION',null); 
-INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (3, 'LÑQAZXCT', 6000, empty_blob(),'EL MEJOR TRATAMIENTO PARA MASCOTAS', null); 
+INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (3, 'LQAZXCT', 6000, empty_blob(),'EL MEJOR TRATAMIENTO PARA MASCOTAS', null); 
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (4, 'IEKMCXZG', 15000, empty_blob(),'ARRIESGANDO MI VIDA POR ELLOS', null); 
-INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (5, 'MVNCÑLSA', 10000, empty_blob(),'DAR EL MEJOR SERVICIO', null); 
+INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (5, 'MVNCLSA', 10000, empty_blob(),'DAR EL MEJOR SERVICIO', null); 
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (6, 'QSZFSALK', 1000, empty_blob(),'UNA MASCOTA SIN HAMBRE, ES UNA MASCOTA FELIZ', null); 
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (7, 'PQZFCXEW', 500, empty_blob(),'SI LO QUIERES, ADOPTA', null); 
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (8, 'LCDQAZMB', 2500, empty_blob(),'ADOPTAR TE HACE MEJOR PERSONA', null); 
-INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (9, 'ÑLDWAZVC', 2999, empty_blob(),'EL CARIÑO HACIA UNA MASCOTA ES LO MEJOR QUE TE PUEDE PASAR', null); 
+INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (9, 'LDWAZVC', 2999, empty_blob(),'EL CARIÑO HACIA UNA MASCOTA ES LO MEJOR QUE TE PUEDE PASAR', null); 
 INSERT INTO REFUGIO(centro_operativo_id,numero_registro,capacidad,logo,lema,refugio_alterno_id) values (10, 'MQAGFDSI', 1000, empty_blob(),'DESPUES DE LOS GRANDES MOMENTOS QUEDAN INOLVIDABLES RECUERDOS', null);
 
 
@@ -125,8 +121,8 @@ INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccio
 INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Áurea', 'Barragán', 'Bayona', ' PERALVILLO 95, MORELOS , CUAUHTEMOC , DF , C.P.06200 ', 'Escritor', 'barraganes1', 'barreira');
 INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Irene', 'Gallardo', 'Arroyo', ' VIA MORELOS 377, PRO REVOLUCION , ECATEPEC DE MORELOS , MEX , C.P.55100 ', 'Bomberos', 'irene11', 'irenitas32');
 INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Álvaro', 'Santana', 'Ballesteros', ' 623 229, SAN JUAN DE ARAGON IV SECCION , GUSTAVO A. MADERO , DF , C.P.07979 ', 'Ladrón', '098Santanita', 'satanas');
-INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Ámbar', 'Vergara', 'Cañizares', ' DEL MAZO ESQ COVARRUBIAS MZ 101 LT 3, NIÑOS HEROES I SECCION , VALLE DE CHALCO SOLIDARIDAD , MEX , C.P.56610 ', 'Oficinista', 'ambar13', 'notengoContraseña123');
-INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Belén', 'Olivares', 'Daza', ' AVE IGNACIO MORONES PRIETO 27, BUENOS AIRES , CUAUHTEMOC , DF , C.P.06720 ', 'Recepcionista', 'Belenitas', 'campanasDeBelen01');
+INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Ámbar', 'Vergara', 'Cañizares', ' DEL MAZO ESQ COVARRUBIAS MZ 101 LT 3, NIÑOS HEROES I SECCION , VALLE DE CHALCO SOLIDARIDAD , MEX , C.P.56610 ', 'Oficinista', 'ambar13', 'notengoContrasenia');
+INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Belén', 'Olivares', 'Daza', ' AVE IGNACIO MORONES PRIETO 27, BUENOS AIRES , CUAUHTEMOC , DF , C.P.06720 ', 'Recepcionista', 'Belenitas', 'campanasDeBelen');
 --trigger
 INSERT INTO CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password) VALUES (cliente_seq.nextval, 'Marcos', 'Olivares', 'Hernandez', ' AVE IGNACIO MORONES PRIETO 29, VALLE DEL SUR , CUAUHTEMOC , DF , C.P.06720 ', 'ING. COMPUTACION', 'marquitos', 'campanasDeBelen04');
 --DONATIVO
@@ -182,11 +178,11 @@ insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fech
 insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fecha_status,descripcion_muerte,fecha_adopcion,mascota_padre,mascota_madre,tipo_mascota_id,origen_mascota_id,estatus_mascota_id, refugio_id,cliente_donacion_id) 
   values (mascota_seq.nextval, 'Mohammad','KGIR8364',to_date('02/05/2021','mm/dd/yyyy'), to_date('03/22/2021','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,6,3,4,6,null);
 insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fecha_status,descripcion_muerte,fecha_adopcion,mascota_padre,mascota_madre,tipo_mascota_id,origen_mascota_id,estatus_mascota_id, refugio_id,cliente_donacion_id) 
-  values (mascota_seq.nextval, 'Loki', 'BSTE2341',to_date('05/06/2019','mm/dd/yyyy'), to_date('09/28/2009','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,7,4,2,7,null);
+  values (mascota_seq.nextval, 'Loki', 'BSTE2341',to_date('05/06/2019','mm/dd/yyyy'), to_date('09/28/2009','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,7,3,2,7,null);
 insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fecha_status,descripcion_muerte,fecha_adopcion,mascota_padre,mascota_madre,tipo_mascota_id,origen_mascota_id,estatus_mascota_id, refugio_id,cliente_donacion_id) 
   values (mascota_seq.nextval, 'Dever', 'FHRU9285',to_date('07/16/2013','mm/dd/yyyy'), to_date('11/12/2010','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,8,2,2,8,null);
 insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fecha_status,descripcion_muerte,fecha_adopcion,mascota_padre,mascota_madre,tipo_mascota_id,origen_mascota_id,estatus_mascota_id, refugio_id,cliente_donacion_id) 
-  values (mascota_seq.nextval, 'Alpha', 'BNVY8288',to_date('08/08/2018','mm/dd/yyyy'), to_date('07/07/2017','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,9,3,2,9,null);
+  values (mascota_seq.nextval, 'Alpha', 'BNVY8288',to_date('08/08/2018','mm/dd/yyyy'), to_date('07/07/2017','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,9,3,3,9,null);
 insert into mascota (mascota_id,nombre,folio,fecha_ingreso,fecha_nacimiento,fecha_status,descripcion_muerte,fecha_adopcion,mascota_padre,mascota_madre,tipo_mascota_id,origen_mascota_id,estatus_mascota_id, refugio_id,cliente_donacion_id) 
   values (mascota_seq.nextval, 'Bad Bunny', 'QKGN1978',to_date('06/20/2012','mm/dd/yyyy'), to_date('04/08/2010','mm/dd/yyyy'), to_date('01/15/2022','mm/dd/yyyy'),null,null,null,null,10,4,2,10,null);
 --trigger

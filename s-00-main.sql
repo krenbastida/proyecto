@@ -36,8 +36,18 @@ promp Creando vistas
 prompt Poblando la base
 @s-09-carga-inicial.sql
 
+Prompt consultas
+@s-10-consultas.sql
+
 Prompt Creando trigger
-@s-11-tr-maximo-mascotas.sql
+--@s-11-tr-maximo-mascotas.sql
 
 Prompt Prueba trigger
-@s-12-maximo-mascotas-prueba.sql
+--@s-12-maximo-mascotas-prueba.sql
+
+Prompt Creando funcion folio
+@s-15-fx-folio.sql
+
+Prompt Prueba función folio
+@s-16-fx-folio-prueba.sql
+
