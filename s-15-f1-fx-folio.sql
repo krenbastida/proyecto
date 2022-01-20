@@ -5,6 +5,8 @@
 set serveroutput on
 create or replace function folio
 return varchar2 is
+
+
 v_folio_mascota varchar2(8);
 v_alpha varchar2(4);
 v_numeric number(4,0);
