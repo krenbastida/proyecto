@@ -236,7 +236,7 @@ INSERT INTO SOLICITUD_MASCOTA(solicitud_mascota_id,fecha_solicitud,descripcion_r
 
 -- REVISION ADOPCION
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 11, to_date('06/06/2020','mm/dd/yyyy'), 'La mascota cuenta con un estado de salud delicado debido a su edad', 6, 2500.50, 11);
-INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 2, to_date('03/22/2021','mm/dd/yyyy'), 'La mascota cuenta con un estado de salud muy bueno', 10, 500.00, 2);
+INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 3, to_date('03/22/2021','mm/dd/yyyy'), 'La mascota cuenta con un estado de salud muy bueno', 10, 500.00, 2);
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 3, to_date('07/30/2020','mm/dd/yyyy'), 'La mascota cuenta con una contractura en la pata izquierda', 8, 14500.23, 3);
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 4, to_date('01/23/2021','mm/dd/yyyy'), 'La mascota presenta malestar en el estomago', 8, 900.50, 4);
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 5, to_date('11/25/2021','mm/dd/yyyy'), 'La mascota no presenta ningun problema', 10, 400.00, 5);
@@ -245,3 +245,12 @@ INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observac
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 8, to_date('06/12/2020','mm/dd/yyyy'), 'La mascota no presenta ningún malestar', 10, 199.99, 8);
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 9, to_date('05/18/2020','mm/dd/yyyy'), 'Tomar gentamecino de 100ml para perro por diez días.',6, 15000.00, 9);
 INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) VALUES(revision_adopcion_seq.nextval, 10, to_date('08/05/2021','mm/dd/yyyy'), 'Aplicar refuerzo de vacuna contra covid para perro en dos meses', 10, 4999.29, 10);
+
+
+-- INSERTS FUNCIONES
+INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) 
+VALUES(numero_revision_adopcion_seq.nextval, 2, to_date('08/30/2021','mm/dd/yyyy'), 'La mascota cuenta con un fractura en la pata izquierda', 6, 2400.99, 2);
+INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) 
+VALUES(numero_revision_adopcion_seq.nextval, 2, to_date('12/29/2021','mm/dd/yyyy'), 'La mascota se encuentra mejor de su fractura, se aplicó antibioticos y refuerzo de vacuna contra la rabia', 9, 3500.00, 2);
+INSERT INTO REVISION_ADOPCION(numero_revision,mascota_id,fecha_revision,observaciones,calificacion,costo,centro_operativo_id) 
+VALUES(numero_revision_adopcion_seq.nextval, 2, to_date('12/29/2021','mm/dd/yyyy'), 'La mascota se encuentra mejor de su fractura, se aplicó antibioticos y refuerzo de vacuna contra la rabia', 9, 3500.00, 2);
