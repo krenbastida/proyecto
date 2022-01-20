@@ -4,13 +4,13 @@ const cors = require('cors')
 
 //Other dependencies
 const { api } = require('./config/envConfig')
+const routes = require('./routes')
 const Lib = require('./lib/oracle')
 
 const app = express()
 
-// DB
-const lib = new Lib()
-// lib.connect()
+// routes
+app.use('/api', routes)
 
 //Midlewares
 app.use(cors('*'))
