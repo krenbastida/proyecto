@@ -9,11 +9,15 @@ const lib = new Lib()
 
 router.post(
 	'/',
-	(req, res, next) => {
+	async (req, res, next) => {
     try{
+      console.log(req.body)
       const data = req.body
       const response = lib.post(data)
-      res.status(201).send({succes: true, data})
+      if (response) 
+        res.status(201).send({succes: true, response})
+      else
+        res.status(400).send({succes: false})
     }catch(err){
       console.error(err)
     }

@@ -45,9 +45,53 @@ Prompt Creando trigger
 Prompt Prueba trigger
 --@s-12-maximo-mascotas-prueba.sql
 
+Prompt Creando trigger
+@s-11-tr-actualiza-historico.sql
+
+Prompt Prueba trigger
+@s-12-tr-actualiza-historico-prueba.sql
+
+Prompt Creando trigger
+@s-11-tr-consistencia-fechas.sql
+
+Prompt Prueba trigger
+@s-12-tr-consistencia-fechas-prueba.sql
+
+Prompt Creando procedimiento
+@s-13-p-refugio.sql
+
+Prompt Probando procedimiento
+@s-14-p-refugio-prueba.sql
+
 Prompt Creando funcion folio
 @s-15-fx-folio.sql
 
 Prompt Prueba función folio
 @s-16-fx-folio-prueba.sql
 
+Prompt Creando funcion 
+@s-15-fx-revision-adopcion.sql
+
+Prompt Prueba función 
+@s-16-fx-revision-adopcion-prueba.sql
+
+Prompt Creando funcion
+@s-15-fx-donativo-clinica.sql
+
+Prompt Creando funcion
+@s-15-fx-donativo-refugio.sql
+
+Prompt Creando funcion
+@s-15-fx-donativo-oficina.sql
+
+Prompt Probando funcion
+@s-16-fx-donativo-prueba.sql
+
+Prompt Creando procedimiento
+@s-13-p-centro.sql
+
+Prompt Probando procedimiento
+@s-14-p-centro-prueba.sql
+
+Prompt Validador
+@resultados-proyecto-final.sql
