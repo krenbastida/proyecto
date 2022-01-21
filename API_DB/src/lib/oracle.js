@@ -19,9 +19,9 @@ class OracleLib {
 			})
 
 			const result = await connection.execute(
-				`INSERT INTO
-				CLIENTE(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password)
-				VALUES (cliente_seq.nextval, :nombre, :apellidoP, :apellidoM, :direccion, :ocupacion, :username, :password)`,
+				`insert into
+				cliente(cliente_id,nombre,apellido_paterno,apellido_materno,direccion,ocupacion,username,password)
+				values (cliente_seq.nextval, :nombre, :apellidoP, :apellidoM, :direccion, :ocupacion, :username, :password)`,
 				{
 					nombre: { val: data.nombre },
 					apellidoP: { val: data.apellidoP },
@@ -33,17 +33,12 @@ class OracleLib {
 				}
 			)
 
+
+			console.log(result)
+
 			return result
 		} catch (err) {
 			console.error(err)
-		} finally {
-			if (connection) {
-				try {
-					await connection.close()
-				} catch (err) {
-					console.error(err)
-				}
-			}
 		}
 	}
 }

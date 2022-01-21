@@ -11,7 +11,6 @@ router.post(
 	'/',
 	async (req, res, next) => {
     try{
-      console.log(req.body)
       const data = req.body
       const response = lib.post(data)
       if (response) 

@@ -9,12 +9,14 @@ const Lib = require('./lib/oracle')
 
 const app = express()
 
-// routes
-app.use('/api', routes)
-
 //Midlewares
 app.use(cors('*'))
 app.use(express.json())
+
+// routes
+app.use('/api', routes)
+
+
 
 app.listen(api.port, (err) => {
 	if (err) console.error(err)

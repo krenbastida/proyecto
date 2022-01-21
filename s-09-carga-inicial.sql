@@ -64,7 +64,7 @@ INSERT INTO CLINICA(centro_operativo_id,hora_inicio,hora_fin,telefono_atencion_c
 
 
 -- OFICINA
-INSERT INTO OFICINA(centro_operativo_id,rfc,firma_electronica,nombre,apellido_paterno,apellido_materno) VALUES (oficina_seq.nextval, 'SAMJ580305QU2', empty_blob(), 'Juan Luis', 'San', 'Martin');
+--INSERT INTO OFICINA(centro_operativo_id,rfc,firma_electronica,nombre,apellido_paterno,apellido_materno) VALUES (oficina_seq.nextval, 'SAMJ580305QU2', empty_blob(), 'Juan Luis', 'San', 'Martin');
 INSERT INTO OFICINA(centro_operativo_id,rfc,firma_electronica,nombre,apellido_paterno,apellido_materno) VALUES (oficina_seq.nextval, 'CATE800618T17', empty_blob(), 'Esperanza Jennifer', 'Catalá', 'Téllez');
 INSERT INTO OFICINA(centro_operativo_id,rfc,firma_electronica,nombre,apellido_paterno,apellido_materno) VALUES (oficina_seq.nextval, 'SABL961221IQ2', empty_blob(), 'León', 'Sánchez', 'Bastida');
 INSERT INTO OFICINA(centro_operativo_id,rfc,firma_electronica,nombre,apellido_paterno,apellido_materno) VALUES (oficina_seq.nextval, 'PEOE720911GR1', empty_blob(), 'Elvira', 'Peñalver', 'Ortiz');
