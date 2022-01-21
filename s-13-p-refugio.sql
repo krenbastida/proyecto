@@ -1,7 +1,7 @@
 --@Autor(es): Karen Mariel Bastida Vargas, Luis Aldo Gomez Bolaños 
 --@Fecha creación: 04/01/2022
---@Descripción: Script para crear vistas.}
-
+--@Descripción: Este script sirve para ingresar o actualizar las imagenes
+--del logo de los refugios
 set serveroutput on
 connect sys/system as sysdba 
 prompt Creando el directorio /tmp/bases en caso de no existir
